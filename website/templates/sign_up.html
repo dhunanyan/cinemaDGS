@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<div class="signup signup--1">
+  <div class="signup__container container">
+    <form class="signup__form" method="POST">
+      <button type="submit" class="signup__button">Submit</button>
+      <div class="signup__content">
+        <h3 class="signup__title title">Sign Up</h3>
+        <p class="signup__descr descr">
+          whatch your favourite movies in CinemaDGS
+        </p>
+      </div>
+
+      <div class="signup__inputs">
+        <input
+          type="email"
+          class="signup__input"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+        <input
+          type="text"
+          class="signup__input"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
+        <input
+          type="password"
+          class="signup__input"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+        <input
+          type="password"
+          class="signup__input"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

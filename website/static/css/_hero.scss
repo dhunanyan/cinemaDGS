@@ -1,0 +1,150 @@
+.hero {
+  margin: 70px 0 0 0;
+  color: #f1f1f1;
+  background-color: #ffcc57;
+  position: relative;
+  border-bottom: 1px solid #303030;
+
+  &__container {
+  }
+
+  &__img {
+    position: absolute;
+    max-width: 630px;
+    top: 0px;
+    right: 0px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    padding: 450px 0 0 0;
+    color: #303030;
+  }
+
+  &__title {
+    margin: 5px 0 40px 0;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+      width: 90px;
+      height: 2px;
+      background-color: #303030;
+      margin: 0 5px 0 0;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: -40px;
+    margin-left: -5em;
+    background: #303030;
+    width: 10em;
+    height: 10em;
+    padding: 4em 2em;
+    border-radius: 50%;
+    font-size: 0.5em;
+    display: block;
+    box-shadow: 0px 0px 5px 0px #303030;
+    border: 1px solid #ffcc57;
+
+    span {
+      float: left;
+      position: relative;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 3em 3em 0 3em;
+      border-color: #ffcc57 transparent transparent transparent;
+      transform: rotate(360deg);
+      transition: all 550ms ease-out;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3.2em;
+        left: -3em;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 3em 3em 0 3em;
+        border-color: #303030 transparent transparent transparent;
+        transform: rotate(360deg);
+        transition: all 450ms ease-out;
+      }
+    }
+
+    &:hover {
+      background: #ffcc57;
+      border: 1px solid #303030;
+
+      span {
+        border-color: #303030 transparent transparent transparent;
+
+        &::after {
+          border-color: #ffcc57 transparent transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1095px) {
+  .hero {
+    &__img {
+      max-width: 580px;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero {
+    &__img {
+      max-width: 550px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .hero {
+    &__img {
+      max-width: 520px;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    &__img {
+      max-width: 370px;
+    }
+
+    &__content {
+      padding: 300px 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    &__img {
+      width: 280px;
+    }
+
+    &__content {
+      padding: 250px 0 0 0;
+    }
+  }
+}

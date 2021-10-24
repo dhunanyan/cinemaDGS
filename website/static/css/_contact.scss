@@ -1,0 +1,122 @@
+.contact {
+  background-color: #303030;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    width: 50%;
+    background-color: #284549;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffcc57;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 0;
+  }
+
+  &__icon {
+    font-size: 160px;
+    color: #ffcc57;
+  }
+
+  &__content {
+    background-color: #ffcc57;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    width: 50%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #303030;
+  }
+
+  &__descr {
+    margin: 0 auto 0 0;
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+
+  &__social {
+    font-size: 32px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #284549;
+    color: #ffcc57;
+    font-weight: 700;
+    border: 2px #284549 solid;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include hideTapHighlightColor();
+    @include hardwareAccel();
+    @include improveAntiAlias();
+    transition: all 350ms ease-out;
+    &:hover,
+    &:focus {
+      animation-name: wobble-top;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+      transition: all 350ms ease-out;
+      background-color: #ffcc57;
+      color: #284549;
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .contact {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 100%;
+      padding: 20px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border: 3px solid #ffcc57;
+      border-bottom: 0;
+    }
+
+    &__content {
+      width: 100%;
+      border-radius: 20px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      min-height: 320px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .contact {
+    &__socials {
+      min-width: 260px;
+    }
+
+    &__socials {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+      <section id="home" class="hero">
+        <div class="hero__container container">
+          <div class="hero__img">
+            <img src="img/hero-background1.png" alt="Mountains" />
+          </div>
+
+          <div class="hero__content">
+            <h3 class="hero__subtitle"><span></span>Your Best Choice</h3>
+            <h1 class="hero__title title">Cinema DGS</h1>
+            <p class="hero__descr descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              ea doloribus eum commodi quasi ipsum aperiam tenetur deleniti nemo
+              ut. Et, dolore.
+            </p>
+          </div>
+
+          <a class="hero__arrow yakor" href="#movies">
+            <span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="movies">
+        <div class="movies__container container">
+          <div class="movies__content content">
+            <h2 class="movies__title title">Our Movies</h2>
+            <span class="movies__line line line--yellow"></span>
+            <div class="movies__descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              minima sapiente officiis consequuntur ad vel rem, dignissimos
+              illum.
+            </div>
+          </div>
+
+          <div id="movies" class="movies__slider-container">
+            <div class="scroll__wrapper">
+              <div class="scroll__filler"></div>
+              <div class="scroll">
+                <div class="scroll__inner">
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <div class="scroll__img">
+                      <img src="img/tile1.jpg" alt="Focus" />
+                    </div>
+                    <h3 class="scroll__subtitle">Focus</h3>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--3">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button">Reserve</button>
+                  </a>
+
+                  <a href="#" class="scroll__item scroll__item--7">
+                    <h2 class="scroll__title">Coming Soon</h2>
+                    <p class="scroll__icon">
+                      <i class="fas fa-question-circle"></i>
+                    </p>
+                    <button class="scroll__button scroll__button--disable">
+                      Reserve
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll__position-wrapper">
+              <button
+                class="scroll__btn prev"
+                onclick="prevBtn()"
+                disabled
+              ></button>
+              <div class="scroll__position">
+                <div class="scroll__position-inner"></div>
+              </div>
+              <button class="scroll__btn next" onclick="nextBtn()"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__container container">
+          <div class="contact__left">
+            <div class="contact__icon">
+              <i class="fas fa-video"></i>
+            </div>
+        </div>
+
+        <div class="contact__content">
+          <h2 class="contact__title title">Contact us</h2>
+          <p class="contact__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui aliquam voluptatibus sunt nemo, similique nulla quia quos.Tenetur qui aliquam voluptatibus sunt nemo, similique nulla quia quos.</p>
+          <p class="contact__descr">info@mysite.com</p>
+          <div class="contact__socials">
+            <a href="#" class="contact__social"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="contact__social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="contact__social"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="contact__social"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </section>
+{% endblock %}

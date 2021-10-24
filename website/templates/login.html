@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<div class="signup signup--2">
+  <div class="signup__container container">
+    <form class="signup__form" method="POST">
+      <button type="submit" class="signup__button">Login</button>
+      <div class="signup__content">
+        <h3 class="signup__title title">LogIn</h3>
+        <p class="signup__descr descr">
+          If you don't have an account
+          <a class="signup__alterlink" href="/sign-up">Sign Up</a> now!
+        </p>
+      </div>
+
+      <div class="signup__inputs">
+        <input
+          type="email"
+          class="signup__input"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+
+        <input
+          type="password"
+          class="signup__input"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+        />
+      </div>
+    </form>
+  </div>
+  {% endblock %}
+</div>
