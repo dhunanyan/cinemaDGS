@@ -1,11 +1,11 @@
 .signup {
-  padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 160.17px);
+  margin: 70px 0 0 0;
 
   &--2 {
     background-image: url("../img/signin.png");
@@ -169,5 +169,11 @@
       padding: 15px 10px;
       font-size: 20px;
     }
+  }
+}
+
+@media (max-width: 430px) {
+  .signup {
+    height: calc(100vh - 226.18px);
   }
 }

@@ -41,11 +41,6 @@
                 >
               </li>
               <li class="menu__item">
-                <a class="menu__link menu__link--contact yakor" href="/"
-                  >Home</a
-                >
-              </li>
-              <li class="menu__item">
                 <a class="menu__link menu__link--contact yakor" href="/logout"
                   >Logout</a
                 >
@@ -87,6 +82,21 @@
     {% endif %} {% endfor %} {% endif %} {% endwith %}
 
     <main>{% block content %} {% endblock %}</main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__img">
+          <img src="/static/img/logo-alt2.png" alt="Logo" />
+        </div>
+
+        <div class="footer__content">
+          <p class="footer__descr descr">
+            Made with <span><i class="fas fa-heart"></i></span> by
+          </p>
+          <p class="footer__descr descr">Davit Gosia Szymon</p>
+        </div>
+      </div>
+    </footer>
 
     <!--FontAwesome-->
     <script
